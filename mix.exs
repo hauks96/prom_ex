@@ -5,7 +5,7 @@ defmodule PromEx.MixProject do
     [
       app: :prom_ex,
       version: "1.8.0",
-      elixir: "~> 1.11",
+      elixir: "~> 1.14.1",
       name: "PromEx",
       source_url: "https://github.com/akoutmos/prom_ex",
       homepage_url: "https://hex.pm/packages/prom_ex",
@@ -46,12 +46,12 @@ defmodule PromEx.MixProject do
     [
       # Required dependencies
       {:jason, "~> 1.2"},
-      {:finch, "~> 0.13.0"},
+      {:finch, ">= 0.14.0"},
       {:telemetry, ">= 1.0.0"},
       {:telemetry_poller, "~> 1.0"},
       {:telemetry_metrics, "~> 0.6"},
       {:telemetry_metrics_prometheus_core, "~> 1.0"},
-      {:plug_cowboy, "~> 2.5.1"},
+      {:plug_cowboy, ">= 2.6.0"},
       {:octo_fetch, "~> 0.2.0"},
 
       # Optional dependencies depending on what telemetry events the user is interested in capturing
